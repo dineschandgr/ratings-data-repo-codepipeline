@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-southeast-1:108317692498:task-definition/ratings-data-service-TD:4"
+        LoadBalancerInfo:
+          ContainerName: "ratings-data-image"
+          ContainerPort: "8083"
+        PlatformVersion: "LATEST"
