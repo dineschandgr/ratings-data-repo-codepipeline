@@ -14,7 +14,7 @@ Create a AWS CodePipeline With the following stages
 
 2. Build using AWS CodeBuild with the following environment variables specified
 
-    1. CONTAINER_NAME - movie-catalog-image
+    1. CONTAINER_NAME - ratings-data-image
     2. AWS_DEFAULT_REGION - ap-southeast-1
     3. REPOSITORY_URI - ECR Repository URI
     
